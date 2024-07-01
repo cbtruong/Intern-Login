@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+/* ====================== GOOGLE FONTS ======================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ===================== VARIABLE CSS ========================= */
+:root {
+	--header-height: 3rem;
+
+	/* ============ Color ===================== */
+	--body-color: white;
+	--container-color: white;
+
+	/*========== Font and typography ==========*/
+	--body-font: Roboto, sans-serif;
+	--blue: #005cbf;
+	--blue-dark: #002c78;
+	--gray: #cccccc;
+	--black: black;
+
+	/* .5rem = 8px | 1rem = 16px ... */
+	--big-font-size: 3.5rem;
+	--h1-font-size: 2.5rem;
+	--h2-font-size: 1.5rem;
+	--h3-font-size: 1.25rem;
+	--normal-font-size: 1rem;
+	--small-font-size: 0.875rem;
+	--smaller-font-size: 0.813rem;
+	--tiny-font-size: 0.625rem;
+
+	/* ========= Font weight ================= */
+	--font-normal: 400;
+	--font-medium: 500;
+	--font-semi-bold: 600;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ================================ BASE =================================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body,
+button,
+input,
+textarea {
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+}
+body {
+	background-color: var(--body-color);
+	color: var(--font-semi-bold);
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: var(--blue);
+}
+button {
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+select {
+	display: inline-block;
+	/*for firefox*/
+	-moz-appearance: none;
+	/*for chrome*/
+	-webkit-appearance: none;
+	appearance: none;
+	background: url('http://www.w3.org/2000/svg') no-repeat right .75rem center / 8px 10px;
+}
+/*for IE10+*/
+select::-ms-expand {
+	display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ============= LAYOUT ============= */
+.container {
+	border-bottom: 1px solid var(--gray);
+}
+.alignment {
+	padding: 10px 0;
+	max-width: 1100px;
+	margin: 0px auto;
+}
+.grid {
+	display: grid;
+	gap: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* ================= Buttons ============== */
+.button {
+	display: inline-block;
+	background-color: var(--blue-dark);
+	color: var(--container-color);
+	padding: 1rem 2rem;
+	border-radius: 0.3rem;
+	font-weight: bold;
+}
+.button:hover {
+	background-color: #1a4a9d;
 }
 
-.App-link {
-  color: #61dafb;
+.button--flex {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*============== BREAKPOINTS ==============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
 }

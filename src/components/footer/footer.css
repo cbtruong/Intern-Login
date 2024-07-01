@@ -1,0 +1,76 @@
+.footer-wrapper {
+	margin-bottom: 20px;
+
+}
+.footer-content{
+	margin: .5rem 13rem ;
+	padding: 0;
+	padding-bottom: 20px;
+	margin-top: 30px;
+	grid-template-columns: repeat(2, 1fr);
+	border-bottom: 1px solid var(--gray);
+}
+.footer-more {
+	border-right: 1px solid var(--gray);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	.more-frame {
+		margin-bottom: 30px;
+	}
+	.more-frame p {
+		margin-bottom: 25px;
+		font-weight: var(--font-semi-bold);
+	}
+	.more-frame ul {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+	.more-frame ul li a {
+		color: var(--black);
+		cursor: pointer;
+	}
+	.more-frame ul li:hover a {
+		color: var(--blue);
+	}
+}
+/* ================= FOOTER SERVICES ================= */
+.footer-right {
+	p {
+		margin-bottom: 1.5rem;
+		font-weight: var(--font-semi-bold);
+	}
+}
+.footer-services {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--gray);
+	.service {
+		display: flex;
+		flex-direction: column;
+	}
+	.service img {
+		width: 120px;
+        margin-bottom: 0px;
+        cursor: pointer;
+	}
+    .service a{
+        color: var(--black);
+        cursor: auto;
+        font-size: var(--small-font-size);
+    }
+}
+
+
+/* Contact */
+.footer-contacts{
+	margin:20px 0;
+
+}
+.contact{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap:1rem;
+}

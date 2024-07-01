@@ -1,0 +1,7 @@
+.notfound-wrapper{
+    text-align: center;
+    h1{
+        margin: 10rem 0;
+        font-size: var(--big-font-size);
+    }
+}

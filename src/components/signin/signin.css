@@ -1,0 +1,76 @@
+.signin-content{
+    border-bottom: 1px solid var(--gray);
+}
+.signin-wrapper{
+    width: 500px;
+    margin: 20px auto;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    h1{
+        font-size: calc(var(--h2-font-size)*1.2);
+        font-weight: var(--font-semi-bold);
+    }
+    .signin-subtitle span{
+        font-weight: var(--font-semi-bold);
+    }
+    .input-wrapper{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .checkbox_wrapper{
+        flex-direction: row;
+    }
+    .input-wrapper input{
+        width: 100%;
+        border: 1px solid var(--gray);
+        outline: none;
+        padding: 15px;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    .input-wrapper input:focus{
+        border: 1px solid var(--blue);
+    }
+    .input-wrapper .error_input,
+    .input-wrapper .error_input:focus{
+        border-color: red;
+    }
+
+    .show_error{
+        display: block;
+        font-size: var(--tiny-font-size);
+        transition: 0.3s;
+        color: red;
+    }
+    .input-wrapper input[type="checkbox"]{
+        width: 16px;
+        height: 16px;
+        border: 1px solid var(--gray);
+       
+    }
+    .input-wrapper input[type="checkbox"]:focus{
+        box-shadow: 0 0 0 3px #4a7af465;
+    }
+    .stay-signin{
+        font-size: var(--normal-font-size);
+    }
+    h5{
+        font-weight: var(--font-semi-bold);
+        font-size: var(--h2-font-size);
+    }
+    .btnRegister{
+        background-color: var(--body-color);
+        border:2px solid var(--blue-dark);
+        border-radius: 5px;
+        padding: 0.75rem 2rem;
+        color: var(--blue-dark);
+        font-weight: var(--font-semi-bold);
+    }
+    .btnRegister:hover{
+        color: var(--body-color);
+        background-color: var(--blue-dark);
+    }
+}
